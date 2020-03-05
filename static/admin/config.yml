@@ -1,5 +1,5 @@
 backend:
-  name: gatsby-blog
+  name: gatsby
   repo: rugleh/gatsby-blog
 
 media_folder: static/assets
