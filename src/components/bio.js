@@ -34,11 +34,11 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives in Santiago, Chile 
+              Written by <strong>{author}</strong>
             
-              {` `}
+              {` `}<br></br>
               <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+                Twitter
               </a>
             </p>
           </Container>

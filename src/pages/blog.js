@@ -4,8 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
-import Button from "../components/button"
+import { Container } from "react-bootstrap"
 
 class Blog extends React.Component {
   render() {
@@ -15,20 +14,23 @@ class Blog extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
+
         <SEO title="All posts" />
-        <Bio />
-        <div style={{ margin: "20px 0 40px" }}>
+        <Container>
+          <br></br>
+        <h1>Blog</h1>
+        {/* <Bio /> */}
+        <br></br>
+        <div >
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
               <div key={node.fields.slug}>
                 <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
+                  
                 >
                   <Link
-                    style={{ boxShadow: `none` }}
+                  
                     to={`blog${node.fields.slug}`}
                   >
                     {title}
@@ -44,9 +46,7 @@ class Blog extends React.Component {
             )
           })}
         </div>
-        <Link to="/">
-          <Button marginTop="85px">Go Home</Button>
-        </Link>
+        </Container>
       </Layout>
     )
   }
