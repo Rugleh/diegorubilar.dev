@@ -16,28 +16,4 @@ To start using it you should go to its site
 
 Install it
 
-```javascript
-npm install react-particles-js || yarn add react-particles-js
-```
-
-import it to your React component
-
-```javascript
-import Particles from 'react-particles-js';
-```
-
-And use it first with the basic configuration
-
-```javascript
-class App extends Component{
-  
-    render(){
-        return (
-            <Particles />
-        );
-    };
- 
-}
-```
-
-Yes, we use it just as any component in React <Particles /> it's one more component with a few props and configurations that you can edit.
+t's one more component with a few props and configurations that you can edit.
