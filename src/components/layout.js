@@ -18,8 +18,9 @@ class Layout extends React.Component {
         <Menu></Menu>
         <br></br>
         <br></br>
-        <Row className="justify-content-md-center">
-          <Col md={8}>
+        <Container>
+        <Row>
+          <Col>
             <header>{header}</header>
             <main>{children}</main>
             <br></br>
@@ -29,6 +30,7 @@ class Layout extends React.Component {
             <Footer></Footer>
           </Col>
         </Row>
+        </Container>
       </div>
     )
   }
