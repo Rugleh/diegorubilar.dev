@@ -1,5 +1,6 @@
 a {
     box-shadow: none !important;
+    color: #E87400;
 }
 
 h1, h2, h3, h4 {
@@ -17,3 +18,92 @@ h2 {
 h3 {
     font-weight: 200;
 }
+
+.particles{
+    background-color: #413C58;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.absolute {
+    position: relative;
+    top: 200px;
+    right: 0;
+    left: 10%;
+    width: 50%;
+    color: white;
+  }
+
+  .sticky-bottom{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: grey;
+    text-align: center;
+  }
+
+  .dark{
+      color: #413C58;
+  }
+
+  .orange{
+      color: #E87400;
+  }
+
+  .absolute>.title{
+      font-size: 3rem;
+      font-weight: 600;
+  }
+
+  .absolute>.paragraph{
+      font-size: 2rem;
+  }
+
+  .absolute>.icons{
+      font-size: 2rem;
+  }
+ 
+
+  @media (max-width: 600px) {
+    .particles{
+        height: 100%;
+        position: absolute;
+    }
+
+    .absolute{
+        position: relative;
+        width: 100%;
+        right: 0;
+        left: 0;
+        top: 90px;
+        padding-top: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .sticky-bottom{
+     
+       position: absolute;
+       padding: 10px;
+       padding-right: 30px;
+    padding-left: 30px;
+       
+      }
+
+      .absolute>.title{
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+  
+    .absolute>.paragraph{
+        font-size: 1.5rem;
+    }
+  
+    .absolute>.icons{
+        font-size: 1.5rem;
+    }
+
+    
+  }

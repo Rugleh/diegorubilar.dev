@@ -45,7 +45,7 @@ function Album() {
                     Nuxt.js
                   </Badge>
                 </Card.Footer>
-              </Card>   
+              </Card>
               <Card>
                 <div>
                   <Image
@@ -74,42 +74,47 @@ function Album() {
                   </Badge>
                 </Card.Footer>
               </Card>
-            </CardDeck>
-                <br></br>
-            <CardDeck>
               <Card>
                 <div>
                   <Image
                     fixed={data.dosha.childImageSharp.fixed}
                     alt="dosha"
                     style={{
-                      height: "300px",
+                      height: "200px",
                       width: "100%",
-                      align: "middle"
+                      align: "middle",
                     }}
                   />
                 </div>
                 <Card.Body>
                   <Card.Title>Dosha Imbalance</Card.Title>
                   <Card.Text>
-                    Open source {" "}
-                    <a href="https://www.doshainbalance.netlify.com">Ayurveda Quiz</a>, it was develop for the HealthyGamer Community for free.
+                    Open source{" "}
+                    <a href="https://doshaimbalance.netlify.com">
+                      Ayurveda Quiz
+                    </a>
+                    , it was develop for the HealthyGamer Community for free.
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>
                   <Badge pill variant="warning">
                     Javascript
                   </Badge>{" "}
-                
                 </Card.Footer>
               </Card>
-              <Card>
+            </CardDeck>
+            
+            <br></br>
+
+            <CardDeck>
+
+            <Card>
                 <div>
                   <Image
                     fixed={data.derechos.childImageSharp.fixed}
                     alt="derechos"
                     style={{
-                      height: "300px",
+                      height: "200px",
                       width: "100%",
                     }}
                   />
@@ -118,7 +123,11 @@ function Album() {
                   <Card.Title>Derechos en Linea</Card.Title>
                   <Card.Text>
                     Web development and backend platform for{" "}
-                    <a href="https://www.derechosenlinea.cl">Derechos en Linea</a>, group of professional and services that helps prosecutors manage their cases
+                    <a href="https://www.derechosenlinea.cl">
+                      Derechos en Linea
+                    </a>
+                    , group of professional and services that helps prosecutors
+                    manage their cases
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>
@@ -128,47 +137,42 @@ function Album() {
                   <Badge pill variant="success">
                     Vue.js
                   </Badge>{" "}
-                
                 </Card.Footer>
               </Card>
-            </CardDeck>
-<br></br>
-
-<CardDeck>
               <Card>
                 <div>
                   <Image
                     fixed={data.turismo.childImageSharp.fixed}
                     alt="turismo"
                     style={{
-                      height: "300px",
+                      height: "200px",
                       width: "100%",
-                      align: "middle"
+                      align: "middle",
                     }}
                   />
                 </div>
                 <Card.Body>
                   <Card.Title>Turismo Meditarraneo</Card.Title>
                   <Card.Text>
-                    Web development for {" "}
-                    <a href="https://www.turismomediterraneo.cl">Turismo Meditarraneo</a>, turism agency based in Santiago, Chile with alliances around the world.
+                    Web development for{" "}
+                    <a href="https://www.turismomediterraneo.cl">
+                      Turismo Meditarraneo
+                    </a>
+                    , turism agency based in Santiago, Chile with alliances
+                    around the world.
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                <Badge pill variant="danger">
+                  <Badge pill variant="danger">
                     Laravel
                   </Badge>{" "}
                   <Badge pill variant="success">
                     Vue.js
                   </Badge>{" "}
-                
                 </Card.Footer>
               </Card>
-              
             </CardDeck>
-            
           </div>
-          
         )
       }}
     />
@@ -192,12 +196,12 @@ const albumQuery = graphql`
       }
     }
     dosha: file(absolutePath: { regex: "/portafolio/dosha.png/" }) {
-        childImageSharp {
-          fixed(width: 1611, height: 1251) {
-            ...GatsbyImageSharpFixed
-          }
+      childImageSharp {
+        fixed(width: 1611, height: 1251) {
+          ...GatsbyImageSharpFixed
         }
       }
+    }
     derechos: file(absolutePath: { regex: "/portafolio/derechos.png/" }) {
       childImageSharp {
         fixed(width: 1611, height: 1251) {
@@ -206,12 +210,12 @@ const albumQuery = graphql`
       }
     }
     turismo: file(absolutePath: { regex: "/portafolio/turismo.png/" }) {
-        childImageSharp {
-          fixed(width: 1611, height: 1251) {
-            ...GatsbyImageSharpFixed
-          }
+      childImageSharp {
+        fixed(width: 1611, height: 1251) {
+          ...GatsbyImageSharpFixed
         }
       }
+    }
     site {
       siteMetadata {
         author

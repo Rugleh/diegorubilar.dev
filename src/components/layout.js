@@ -13,20 +13,22 @@ class Layout extends React.Component {
     const blogPath = `${__PATH_PREFIX__}/blog/`
     let header
 
-    
     return (
       <div>
         <Menu></Menu>
-        <Container>
-          <Row className="justify-content-md-center">
-            <Col md={8}>
-              <header>{header}</header>
-              <main>{children}</main>
-              <br></br>
-              <Footer></Footer>
-            </Col>
-          </Row>
-        </Container>
+        <br></br>
+        <br></br>
+        <Row className="justify-content-md-center">
+          <Col md={8}>
+            <header>{header}</header>
+            <main>{children}</main>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <Footer></Footer>
+          </Col>
+        </Row>
       </div>
     )
   }

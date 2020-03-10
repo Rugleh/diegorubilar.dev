@@ -15,6 +15,7 @@ const Menu = () => {
           expand="lg"
           bg="dark"
           variant="dark"
+          fixed="top"
         >
           <Container>
          

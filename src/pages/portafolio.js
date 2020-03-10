@@ -4,6 +4,8 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container } from "react-bootstrap"
+import Album from "../components/album"
+
 
 
 class Portafolio extends React.Component {
@@ -16,7 +18,9 @@ class Portafolio extends React.Component {
         <SEO title="Portafolio" />
         <br></br>
         <Container>
-        <h1>Hey</h1>
+        <h1>Portafolio</h1>
+        <br></br>
+        <Album></Album>
 
         </Container>
         
