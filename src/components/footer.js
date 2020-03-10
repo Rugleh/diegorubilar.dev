@@ -13,7 +13,7 @@ const Footer = () => {
          
         <br></br>
          <p className={ 
-             location.pathname === "/" ? "white" : "grey" 
+             location.pathname === "/" ? "lead white" : "lead grey" 
             }>
          Made with Gatsby / React and Bootstrap with ❤︎ by <a href="https://twitter.com/rugleh">@Rugleh</a>
          </p>
