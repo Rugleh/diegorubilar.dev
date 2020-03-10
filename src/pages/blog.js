@@ -1,10 +1,11 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container } from "react-bootstrap"
+import Fade from "react-reveal/Fade"
+
 
 class Blog extends React.Component {
   render() {
@@ -17,14 +18,17 @@ class Blog extends React.Component {
 
         <SEO title="All posts" />
         <Container>
-          <br></br>
-        <h1>Blog</h1>
+
+        <Fade bottom>
+        <h1 className="text-center main-title">Blog<span className="orange">.</span></h1>
+        </Fade>
         {/* <Bio /> */}
-        <br></br>
+    
         <div >
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
+              <Fade bottom>
               <div key={node.fields.slug}>
                 <h3
                   
@@ -43,6 +47,7 @@ class Blog extends React.Component {
                   }}
                 />
               </div>
+              </Fade>
             )
           })}
         </div>

@@ -1,28 +1,27 @@
+
 import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container } from "react-bootstrap"
-import Album from "../components/album"
-
-import Fade from "react-reveal/Fade"
 
 
-class Portafolio extends React.Component {
+
+
+class About extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="Portafolio" />
-     
+        <SEO title="About me" />
+        <br></br>
         <Container>
-          <Fade bottom>
-        <h1 className="text-center main-title">Portafolio<span className="orange">.</span></h1>
-        </Fade>
-        <Album></Album>
+        <h1>About me</h1>
+        <br></br>
+       
 
         </Container>
         
@@ -31,7 +30,7 @@ class Portafolio extends React.Component {
   }
 }
 
-export default Portafolio
+export default About
 
 export const pageQuery = graphql`
   query {

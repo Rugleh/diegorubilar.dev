@@ -10,7 +10,7 @@ const Footer = () => {
          
         <br></br>
          <p className="lead text-center">
-         Made with Gatsby / React and Bootstrap with ❤︎ by <a href="https://www.twitter.com/rugleh">@Rugleh</a>
+         Made with Gatsby / React and Bootstrap with ❤︎ by <a href="https://twitter.com/rugleh">@Rugleh</a>
          </p>
            
          

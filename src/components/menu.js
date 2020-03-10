@@ -2,8 +2,8 @@
 import React from "react"
 import { Navbar, NavItem, Nav } from "react-bootstrap"
 import { Link } from "gatsby"
-
-import Container from "react-bootstrap/Container"
+import "./menu.css"
+import { Container } from "react-bootstrap"
 
 
 const Menu = () => {
@@ -17,9 +17,8 @@ const Menu = () => {
           variant="dark"
           fixed="top"
         >
-          <Container>
-         
-            <Navbar.Brand href="#home" className="lead" as={Link} href="/" to="/">Diego Rubilar</Navbar.Brand>
+         <Container>
+            <Navbar.Brand href="#home" className="lead" as={Link} href="/" to="/"><span className="orange">Diego</span> Rubilar<span className="orange">.</span></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="mr-auto"></Nav>
@@ -52,7 +51,7 @@ const Menu = () => {
                 
               </Nav>
             </Navbar.Collapse>
-          </Container>
+            </Container>
         </Navbar>
       </div>
     )

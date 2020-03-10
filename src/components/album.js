@@ -6,6 +6,9 @@ import Card from "react-bootstrap/Card"
 import CardDeck from "react-bootstrap/CardDeck"
 import { StaticQuery, graphql } from "gatsby"
 
+import Fade from "react-reveal/Fade"
+
+
 import Image from "gatsby-image"
 
 function Album() {
@@ -16,6 +19,7 @@ function Album() {
         const { author, social } = data.site.siteMetadata
         return (
           <div>
+            <Fade bottom>
             <CardDeck>
               <Card>
                 <div>
@@ -103,8 +107,9 @@ function Album() {
                 </Card.Footer>
               </Card>
             </CardDeck>
-            
+            </Fade>
             <br></br>
+            <Fade bottom>
 
             <CardDeck>
 
@@ -172,6 +177,7 @@ function Album() {
                 </Card.Footer>
               </Card>
             </CardDeck>
+            </Fade>
           </div>
         )
       }}

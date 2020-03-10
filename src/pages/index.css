@@ -64,6 +64,20 @@ h3 {
   .absolute>.icons{
       font-size: 2rem;
   }
+
+  .absolute>.icons>a:hover{
+    color:  rgb(248, 159, 70);
+}
+
+/* blog */
+
+.main-title{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
  
 
   @media (max-width: 600px) {
@@ -104,6 +118,8 @@ h3 {
     .absolute>.icons{
         font-size: 1.5rem;
     }
+
+    
 
     
   }

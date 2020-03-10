@@ -18,9 +18,9 @@ class Layout extends React.Component {
         <Menu></Menu>
         <br></br>
         <br></br>
-        <Container>
-        <Row>
-          <Col>
+        <Container >
+        <Row className="justify-content-md-center">
+          <Col >
             <header>{header}</header>
             <main>{children}</main>
             <br></br>
