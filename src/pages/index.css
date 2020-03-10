@@ -26,6 +26,13 @@ h3 {
     width: 100%;
 }
 
+.particles-blog{
+    background-color: #413C58;
+    position: inherit;
+    height: 400px;
+    width: 100%;
+}
+
 .absolute {
     position: relative;
     top: 200px;
@@ -34,6 +41,16 @@ h3 {
     width: 50%;
     color: white;
   }
+
+.absolute-blog{
+    position: absolute;
+    top: 200px;
+    right: 0;
+    left: 0%;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
 
   .sticky-bottom{
     position: absolute;
@@ -56,6 +73,11 @@ h3 {
       font-size: 3rem;
       font-weight: 600;
   }
+
+  .absolute-blog>.title{
+    font-size: 3rem;
+    font-weight: 600;
+}
 
   .absolute>.paragraph{
       font-size: 2rem;
@@ -95,6 +117,17 @@ h3 {
         padding-top: 40px;
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .particles-blog{
+        background-color: #413C58;
+        position: inherit;
+        height: 300px;
+        width: 100%;
+    }
+
+    .absolute-blog{
+        top: 150px;
     }
 
     .sticky-bottom{

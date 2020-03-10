@@ -1,0 +1,7 @@
+.card-footer{
+    font-size: 1.5em!important;
+}
+
+.card-footer>svg{
+    color: black;
+}

@@ -86,7 +86,7 @@ class IndexPage extends React.Component {
             <Fade bottom >
            
               <h1 className="title">
-           Hi, I'm <span className="orange">Diego</span>
+           Hi, I'm <span className="orange">Diego</span>.
            
               </h1>
             </Fade>
@@ -109,7 +109,7 @@ class IndexPage extends React.Component {
                 <a href="https://instagram.com/rugleh">
                   <FaInstagram></FaInstagram>
                 </a>{" "}
-                <a href="linkedin.com/in/diego-rubilar-tagle-637b2242">
+                <a href="https://linkedin.com/in/diego-rubilar-tagle-637b2242">
                   <FaLinkedin></FaLinkedin>
                 </a>{" "}
                 <a href="https://github.com/rugleh">

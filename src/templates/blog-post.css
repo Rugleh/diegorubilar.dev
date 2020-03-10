@@ -1,0 +1,21 @@
+.absolute-blog-post{
+    position: absolute;
+    top: 200px;
+    right: 0;
+    left: 0%;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.particles-blog-post{
+    background-color: #E87400;;
+    position: inherit;
+    height: 500px;
+    width: 100%;
+}
+
+.absolute-blog-post>.title{
+    font-size: 3rem;
+    font-weight: 600;
+}
