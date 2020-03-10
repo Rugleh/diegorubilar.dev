@@ -100,7 +100,7 @@ class Blog extends React.Component {
                     <h3>
                       <Link to={`blog${node.fields.slug}`}>{title}</Link>
                     </h3>
-                    <small className="lead">{node.frontmatter.date}</small>
+                    <small className="lead"><b>{node.frontmatter.date}</b></small>
                     <p className="lead"
                       dangerouslySetInnerHTML={{
                         __html: node.frontmatter.description || node.excerpt,

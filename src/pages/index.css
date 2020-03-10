@@ -19,15 +19,19 @@ h3 {
     font-weight: 200;
 }
 
+.white{
+    color: white;
+}
+
 .particles{
-    background-color: #413C58;
+    background-image: linear-gradient( 150.7deg,  rgba(0,32,95,1) 1.8%, rgba(132,53,142,1) 99.8% );
     position: absolute;
     height: 100%;
     width: 100%;
 }
 
 .particles-blog{
-    background-color: #413C58;
+    background-image: linear-gradient( 150.7deg,  rgba(0,32,95,1) 1.8%, rgba(132,53,142,1) 99.8% );
     position: inherit;
     height: 400px;
     width: 100%;

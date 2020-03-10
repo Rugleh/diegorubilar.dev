@@ -13,6 +13,7 @@ class Layout extends React.Component {
     const blogPath = `${__PATH_PREFIX__}/blog/`
     let header
 
+
     return (
       <div>
         <Menu></Menu>
@@ -20,7 +21,7 @@ class Layout extends React.Component {
         <br></br>
         <Container >
         <Row className="justify-content-md-center">
-          <Col >
+          <Col>
             <header>{header}</header>
             <main>{children}</main>
             <br></br>

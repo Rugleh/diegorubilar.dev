@@ -7,6 +7,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import { Container } from "react-bootstrap"
+import Col from "react-bootstrap/Col"
+import Row from "react-bootstrap/Row"
+
+
 
 import Fade from "react-reveal/Fade"
 
@@ -22,8 +26,7 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <div>
-
-<Particles
+        <Particles
           className="particles-blog-post"
           params={{
             particles: {
@@ -78,58 +81,58 @@ class BlogPostTemplate extends React.Component {
           }}
         />
 
-<div className="absolute-blog-post">
+        <div className="absolute-blog-post">
           <Fade bottom>
-          <h1 className="title">{post.frontmatter.title}</h1>
-          <p className="lead">{post.frontmatter.date}</p>
+            <h1 className="title">{post.frontmatter.title}</h1>
+            <p className="lead">{post.frontmatter.date}</p>
           </Fade>
         </div>
-      
 
-        
+        <Layout location={this.props.location} title={siteTitle}>
+          <SEO
+            title={post.frontmatter.title}
+            description={post.frontmatter.description || post.excerpt}
+          />
+          <Container>
+          <Row className="justify-content-md-center">
 
-          
-      
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
-        />
-        <Container>
-        <Bio />
-        <br></br>
-          <div id="main-content" className="lead">
-            <MDXRenderer>{post.body}</MDXRenderer>
-          </div>
-         
-          
+              <Col md="8">
 
-          <ul
-            style={{
-              display: `flex`,
-              flexWrap: `wrap`,
-              justifyContent: `space-between`,
-              listStyle: `none`,
-              padding: 0,
-            }}
-          >
-            <li>
-              {previous && (
-                <Link to={`blog${previous.fields.slug}`} rel="prev">
-                  ← {previous.frontmatter.title}
-                </Link>
-              )}
-            </li>
-            <li>
-              {next && (
-                <Link to={`blog${next.fields.slug}`} rel="next">
-                  {next.frontmatter.title} →
-                </Link>
-              )}
-            </li>
-          </ul>
-        </Container>
-      </Layout>
+              
+            <Bio />
+            <br></br>
+            <div id="main-content" className="lead">
+              <MDXRenderer>{post.body}</MDXRenderer>
+            </div>
+
+            <ul
+              style={{
+                display: `flex`,
+                flexWrap: `wrap`,
+                justifyContent: `space-between`,
+                listStyle: `none`,
+                padding: 0,
+              }}
+            >
+              <li>
+                {previous && (
+                  <Link to={`blog${previous.fields.slug}`} rel="prev">
+                    ← {previous.frontmatter.title}
+                  </Link>
+                )}
+              </li>
+              <li>
+                {next && (
+                  <Link to={`blog${next.fields.slug}`} rel="next">
+                    {next.frontmatter.title} →
+                  </Link>
+                )}
+              </li>
+            </ul>
+            </Col>
+            </Row>
+          </Container>
+        </Layout>
       </div>
     )
   }
