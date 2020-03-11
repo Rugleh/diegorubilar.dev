@@ -139,7 +139,7 @@ h3 {
 }
 
 label{
-    display: content !important;
+    display: inherit !important;
 }
 
  

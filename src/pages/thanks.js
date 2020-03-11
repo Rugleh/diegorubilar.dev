@@ -3,8 +3,8 @@ import Layout from "../components/layout"
 
 
 export default () => (
-  <Layout>
-    <h1>Thank you!</h1>
-    <p></p>
+  <Layout
+    pagename={"👏 Thank you 👏"}>
+
   </Layout>
 )

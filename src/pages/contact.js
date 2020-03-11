@@ -93,6 +93,13 @@ export default function Contact() {
             </Button>
         </Form>
         </Col>
+        <Col md={4}>
+        <h2> Basic Info</h2>
+        <br></br>
+
+          <p className="lead"> Santiago, Chile </p>
+          <p className="lead"> diegorubilartagle@gmail.com </p>
+        </Col>
         </Row>
         </Container>
 
