@@ -1,9 +1,6 @@
-import React from "react"
-import { graphql } from "gatsby"
-
+import React from 'react'
+import { navigate } from 'gatsby-link'
 import Layout from "../components/layout"
-import SEO from "../components/seo"
-
 
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
@@ -12,73 +9,94 @@ import Container from "react-bootstrap/Container"
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
-import Fade from "react-reveal/Fade"
 
-class Contact extends React.Component {
-  render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const pagename = "Contact"
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
+}
 
+export default function Contact() {
+    const [state, setState] = React.useState({})
+
+    
+  
+    const handleChange = (e) => {
+      setState({ ...state, [e.target.name]: e.target.value })
+    }
+  
+    const handleSubmit = (e) => {
+      e.preventDefault()
+      const form = e.target
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({
+          'form-name': form.getAttribute('name'),
+          ...state,
+        }),
+      })
+        .then(() => navigate(form.getAttribute('action')))
+        .catch((error) => alert(error))
+    }
+  
     return (
       <Layout
-        pagename={pagename}
-        location={this.props.location}
-        title={siteTitle}
-      >
-        <SEO title="Contact" />
-        <br></br>
-        <Container>
-     
-      <Row>
+        pagename={"Contact"}
+    
+        >
+          <Container>
+        <Row>
         <Col md={6}>
    
 
           <h2> Need help? let me know?</h2>
           <br></br>
 
-          <Form name="contact" method="POST" data-netlify="true">
-            <Form.Group controlId="exampleForm.ControlInput1">
-              <Form.Label className="lead">Your Name</Form.Label>
-              <Form.Control type="text" name="name" placeholder="Jhon Smith" />
-            </Form.Group>
-
-            <Form.Group controlId="exampleForm.ControlInput1">
-              <Form.Label className="lead">Email address</Form.Label>
-              <Form.Control type="email" name="email" placeholder="name@example.com" />
-            </Form.Group>
-          
-            <Form.Group controlId="exampleForm.ControlTextarea1">
-              <Form.Label className="lead">Comment</Form.Label>
-              <Form.Control as="textarea" rows="4" />
-            </Form.Group>
-            <Button className="custom-button" type="submit">
-              Submit
-            </Button>
-          </Form>
-          </Col>
-        <Col md={6}>
-        <h2> Basic Info</h2>
-        <br></br>
-
-          <p className="lead"> Santiago, Chile </p>
-          <p className="lead"> diegorubilartagle@gmail.com </p>
+        <Form
+          name="contact"
+          method="post"
+          action="/thanks/"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          onSubmit={handleSubmit}
+        >
+          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+          <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+            <label>
+              Don’t fill this out: <input name="bot-field" onChange={handleChange} />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your name:
+              <br />
+              <input type="text" name="name" onChange={handleChange} />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your email:
+              <br />
+              <input type="email" name="email" onChange={handleChange} />
+            </label>
+          </p>
+          <p>
+            <label>
+              Message:
+              <br />
+              <textarea name="message" onChange={handleChange} />
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </Form>
         </Col>
-      </Row>
+        </Row>
         </Container>
+
       </Layout>
     )
   }
-}
-
-export default Contact
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
