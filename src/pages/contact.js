@@ -37,15 +37,15 @@ class Contact extends React.Component {
           <h2> Need help? let me know?</h2>
           <br></br>
 
-          <Form data-netlify="true">
+          <Form name="contact" method="POST" data-netlify="true">
             <Form.Group controlId="exampleForm.ControlInput1">
               <Form.Label className="lead">Your Name</Form.Label>
-              <Form.Control type="text" placeholder="Jhon Smith" />
+              <Form.Control type="text" name="name" placeholder="Jhon Smith" />
             </Form.Group>
 
             <Form.Group controlId="exampleForm.ControlInput1">
               <Form.Label className="lead">Email address</Form.Label>
-              <Form.Control type="email" placeholder="name@example.com" />
+              <Form.Control type="email" name="email" placeholder="name@example.com" />
             </Form.Group>
           
             <Form.Group controlId="exampleForm.ControlTextarea1">
