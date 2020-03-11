@@ -18,7 +18,7 @@ const Menu = () => {
           fixed="top"
         >
          <Container>
-            <Navbar.Brand href="#home" className="lead" as={Link} href="/" to="/"><span className="orange">Diego</span> Rubilar<span className="orange">.</span></Navbar.Brand>
+            <Navbar.Brand href="#home" className="lead" as={Link} href="/" to="/"><span className="white">Diego</span> Rubilar<span className="orange">.</span></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="mr-auto"></Nav>

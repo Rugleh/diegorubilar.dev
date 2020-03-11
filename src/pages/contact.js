@@ -13,13 +13,14 @@ class Contact extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
+    const pagename = "Contact"
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout pagename={pagename} location={this.props.location} title={siteTitle}>
         <SEO title="Contact" />
         <br></br>
         <Container>
-        <h1>Contact</h1>
+       
         <br></br>
        
 

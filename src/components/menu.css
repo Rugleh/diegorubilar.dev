@@ -2,9 +2,9 @@
 
 .navbar-brand{
     font-size: 2em !important;
-
+    font-weight: 400!important;
 }
 
 .navbar-brand:hover{
-    color:  #E87400 !important;
+    color:  rgb(247, 119, 15)!important;
 }

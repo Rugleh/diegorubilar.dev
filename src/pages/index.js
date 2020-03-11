@@ -92,11 +92,7 @@ class IndexPage extends React.Component {
             </Fade>
             <Fade bottom >
               <p className="lead paragraph">
-                As a front end{" "}
-                <span className="orange">
-                  <b>web developer</b>
-                </span>{" "}
-                and engineer I want to build a better and faster web experience
+                Front end web developer and engineer. Inspired to build a better and faster web experience
                 for everyone, based in Santiago, Chile.
               </p>
               </Fade>

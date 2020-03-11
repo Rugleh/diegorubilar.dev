@@ -1,6 +1,11 @@
 a {
     box-shadow: none !important;
-    color: #E87400;
+    color:  rgb(247, 119, 15);
+}
+
+a:hover{
+    text-decoration: none;
+    color:  rgb(241, 151, 77);
 }
 
 h1, h2, h3, h4 {
@@ -74,7 +79,7 @@ h3 {
   }
 
   .orange{
-      color: #E87400;
+      color: rgb(247, 119, 15);
   }
 
   .absolute>.title{
@@ -96,8 +101,12 @@ h3 {
   }
 
   .absolute>.icons>a:hover{
-    color:  rgb(248, 159, 70);
+    color:  white;
 }
+
+    .icons>a{
+        color: lightgray;
+    }
 
 /* blog */
 
