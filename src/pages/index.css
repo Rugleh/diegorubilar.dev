@@ -138,6 +138,10 @@ h3 {
     border-color: none !important;
 }
 
+label{
+    display: content !important;
+}
+
  
 
   @media (max-width: 600px) {

@@ -47,7 +47,7 @@ export default function Contact() {
         >
           <Container>
         <Row>
-        <Col md={6}>
+        <Col md={8}>
    
 
           <h2> Need help? let me know?</h2>
@@ -68,30 +68,29 @@ export default function Contact() {
               Don’t fill this out: <input name="bot-field" onChange={handleChange} />
             </label>
           </p>
-          <p>
-            <label>
-              Your name:
-              <br />
-              <input type="text" name="name" onChange={handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your email:
-              <br />
-              <input type="email" name="email" onChange={handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message:
-              <br />
-              <textarea name="message" onChange={handleChange} />
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
+          
+          <Form.Group controlId="exampleForm.ControlInput1">
+            <Form.Label className="lead">
+              <Form.Control placeholder="your name" type="text" name="name" onChange={handleChange} />
+            </Form.Label>
+          </Form.Group>
+       
+          <Form.Group controlId="exampleForm.ControlInput2">
+            <Form.Label className="lead">
+              
+              <Form.Control placeholder="your email@example.com" type="email" name="email" onChange={handleChange} />
+            </Form.Label>
+          </Form.Group>
+
+          <Form.Group controlId="exampleForm.ControlTextarea1">
+              <Form.Label>
+              <Form.Control as="textarea" rows="4" name="message" onChange={handleChange} />
+              </Form.Label>
+            </Form.Group>
+          
+          <Button className="custom-button" type="submit">
+              Submit
+            </Button>
         </Form>
         </Col>
         </Row>
