@@ -90,7 +90,8 @@ h3 {
   .absolute-blog>.title{
     font-size: 3rem;
     font-weight: 600;
-}
+    color: white;
+  }
 
   .absolute>.paragraph{
       font-size: 2rem;
@@ -117,6 +118,21 @@ h3 {
     padding-bottom: 50px;
 }
 
+.page-title{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-bottom: 50px;
+    
+}
+
+.blog-date{
+    text-align: left;
+}
+
+.blog-title{
+    text-align:left;
+}
+
  
 
   @media (max-width: 600px) {
@@ -125,12 +141,16 @@ h3 {
         position: absolute;
     }
 
+    .title-blog{
+        text-align: left;
+    }
+
     .absolute{
         position: relative;
         width: 100%;
         right: 0;
         left: 0;
-        top: 90px;
+        top: 100px;
         padding-top: 40px;
         padding-left: 10px;
         padding-right: 10px;
@@ -139,7 +159,7 @@ h3 {
     .particles-blog{
         background-color: #413C58;
         position: inherit;
-        height: 300px;
+        height: 400px;
         width: 100%;
     }
 
@@ -169,7 +189,10 @@ h3 {
         font-size: 1.5rem;
     }
 
-    
+    .page-title{
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
 
     
   }

@@ -5,19 +5,20 @@ import Footer from "../components/footer"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Container from "react-bootstrap/Container"
-import { globalHistory as history } from '@reach/router'
+import { globalHistory as history } from "@reach/router"
 
 import Fade from "react-reveal/Fade"
 import Particles from "react-particles-js"
 
 class Layout extends React.Component {
-  
   render() {
-    const { location, navigate, } = history
+    const { location, navigate } = history
     const { children, title } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     const blogPath = `${__PATH_PREFIX__}/blog/`
     let header
+    const pathArray = location.pathname.split("/")
+    console.log(pathArray)
 
     return (
       <div>
@@ -79,26 +80,40 @@ class Layout extends React.Component {
 
         <div className="absolute-blog">
           <Fade bottom>
-            <h1 className="title">
-            {this.props.pagename}<span className="orange">.</span>
-            </h1>  
+            <Container>
+              <Row className="justify-content-md-center">
+                <Col md={8}>
+                  <h1
+                    className={
+                      pathArray[1] === "blog" && pathArray[2] != null
+                        ? "blog-title"
+                        : "page-title"
+                    }
+                  >
+                    {this.props.pagename}
+                    <span className="orange">.</span>
+                  </h1>
+                  <p className="blog-date">{this.props.date}</p>
+                </Col>
+              </Row>
+            </Container>
           </Fade>
         </div>
 
         <br></br>
         <br></br>
-        <Container >
-        <Row className="justify-content-md-center">
-          <Col>
-            <header>{header}</header>
-            <main>{children}</main>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <Footer></Footer>
-          </Col>
-        </Row>
+        <Container>
+          <Row className="justify-content-md-center">
+            <Col>
+              <header>{header}</header>
+              <main>{children}</main>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <Footer></Footer>
+            </Col>
+          </Row>
         </Container>
       </div>
     )
