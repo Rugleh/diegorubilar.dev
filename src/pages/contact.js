@@ -10,7 +10,7 @@ import Col from "react-bootstrap/Col"
 import Container from "react-bootstrap/Container"
 
 import Form from 'react-bootstrap/Form'
-
+import Button from 'react-bootstrap/Button'
 
 import Fade from "react-reveal/Fade"
 
@@ -52,6 +52,9 @@ class Contact extends React.Component {
               <Form.Label className="lead">Comment</Form.Label>
               <Form.Control as="textarea" rows="4" />
             </Form.Group>
+            <Button className="custom-button" type="submit">
+              Submit
+            </Button>
           </Form>
           </Col>
         <Col md={6}>
