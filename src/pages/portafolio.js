@@ -6,9 +6,6 @@ import SEO from "../components/seo"
 import { Container } from "react-bootstrap"
 import Album from "../components/album"
 
-import Fade from "react-reveal/Fade"
-import Particles from "react-particles-js"
-
 class Portafolio extends React.Component {
   render() {
     const { data } = this.props

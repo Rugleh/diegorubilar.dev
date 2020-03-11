@@ -43,7 +43,7 @@ function Album() {
                   </div>
                   <Card.Body>
                     <Card.Title>MindGrowth</Card.Title>
-                    <Card.Text>
+                    <Card.Text className="lead">
                       Web development for{" "}
                       <a href="https://www.mindgrowth.cl">MindGrowth</a>, a
                       strategic planification consultant focussing in chilean
@@ -68,7 +68,7 @@ function Album() {
                   </div>
                   <Card.Body>
                     <Card.Title>CajaPyme</Card.Title>
-                    <Card.Text>
+                    <Card.Text className="lead">
                       Web development and ecommerce implementation for{" "}
                       <a href="https://www.cajapyme.cl">CajaPyme</a>, a surprise
                       box full of chileans entrepreneur products
@@ -93,7 +93,7 @@ function Album() {
                   </div>
                   <Card.Body>
                     <Card.Title>Dosha Imbalance</Card.Title>
-                    <Card.Text>
+                    <Card.Text className="lead">
                       Open source{" "}
                       <a href="https://doshaimbalance.netlify.com">
                         Ayurveda Quiz
@@ -123,7 +123,7 @@ function Album() {
                   </div>
                   <Card.Body>
                     <Card.Title>Derechos en Linea</Card.Title>
-                    <Card.Text>
+                    <Card.Text className="lead">
                       Web development and backend platform for{" "}
                       <a href="https://www.derechosenlinea.cl">
                         Derechos en Linea
@@ -151,7 +151,7 @@ function Album() {
                   </div>
                   <Card.Body>
                     <Card.Title>Turismo Meditarraneo</Card.Title>
-                    <Card.Text>
+                    <Card.Text className="lead">
                       Web development for{" "}
                       <a href="https://www.turismomediterraneo.cl">
                         Turismo Meditarraneo

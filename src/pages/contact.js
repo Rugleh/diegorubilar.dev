@@ -1,13 +1,18 @@
-
 import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Container } from "react-bootstrap"
 
 
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
+import Container from "react-bootstrap/Container"
 
+import Form from 'react-bootstrap/Form'
+
+
+import Fade from "react-reveal/Fade"
 
 class Contact extends React.Component {
   render() {
@@ -16,16 +21,48 @@ class Contact extends React.Component {
     const pagename = "Contact"
 
     return (
-      <Layout pagename={pagename} location={this.props.location} title={siteTitle}>
+      <Layout
+        pagename={pagename}
+        location={this.props.location}
+        title={siteTitle}
+      >
         <SEO title="Contact" />
         <br></br>
         <Container>
-       
-        <br></br>
-       
+     
+      <Row>
+        <Col md={6}>
+   
 
+          <h2> Need help? let me know?</h2>
+          <br></br>
+
+          <Form data-netlify="true">
+            <Form.Group controlId="exampleForm.ControlInput1">
+              <Form.Label className="lead">Your Name</Form.Label>
+              <Form.Control type="text" placeholder="Jhon Smith" />
+            </Form.Group>
+
+            <Form.Group controlId="exampleForm.ControlInput1">
+              <Form.Label className="lead">Email address</Form.Label>
+              <Form.Control type="email" placeholder="name@example.com" />
+            </Form.Group>
+          
+            <Form.Group controlId="exampleForm.ControlTextarea1">
+              <Form.Label className="lead">Comment</Form.Label>
+              <Form.Control as="textarea" rows="4" />
+            </Form.Group>
+          </Form>
+          </Col>
+        <Col md={6}>
+        <h2> Basic Info</h2>
+        <br></br>
+
+          <p className="lead"> Santiago, Chile </p>
+          <p className="lead"> diegorubilartagle@gmail.com </p>
+        </Col>
+      </Row>
         </Container>
-        
       </Layout>
     )
   }
