@@ -8,7 +8,7 @@ import { Container } from "react-bootstrap"
 
 const Menu = () => {
     return (
-      <div className="">
+      <div>
         <Navbar
           className="main-navbar"
           collapseOnSelect
@@ -18,7 +18,7 @@ const Menu = () => {
           fixed="top"
         >
          <Container>
-            <Navbar.Brand href="#home" className="lead" as={Link} href="/" to="/"><span className="white">Diego</span> Rubilar<span className="orange">.</span></Navbar.Brand>
+            <Navbar.Brand as={Link} href="/" to="/"><span className="white">Diego</span> Rubilar<span className="orange">.</span></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="mr-auto"></Nav>

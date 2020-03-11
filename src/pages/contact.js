@@ -8,6 +8,7 @@ import Container from "react-bootstrap/Container"
 
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+import Fade from "react-reveal/Fade"
 
 
 function encode(data) {
@@ -45,7 +46,10 @@ export default function Contact() {
         pagename={"Contact"}
     
         >
-          <Container>
+        <Container>
+        <Fade bottom cascade>
+
+        
         <Row>
         <Col md={8}>
    
@@ -71,20 +75,20 @@ export default function Contact() {
           
           <Form.Group controlId="exampleForm.ControlInput1">
             <Form.Label className="lead">
-              <Form.Control placeholder="your name" type="text" name="name" onChange={handleChange} />
+              <Form.Control placeholder="Jhon Smit" type="text" name="name" onChange={handleChange} />
             </Form.Label>
           </Form.Group>
        
           <Form.Group controlId="exampleForm.ControlInput2">
             <Form.Label className="lead">
               
-              <Form.Control placeholder="your email@example.com" type="email" name="email" onChange={handleChange} />
+              <Form.Control placeholder="email@example.com" type="email" name="email" onChange={handleChange} />
             </Form.Label>
           </Form.Group>
 
           <Form.Group controlId="exampleForm.ControlTextarea1">
               <Form.Label>
-              <Form.Control as="textarea" rows="4" name="message" onChange={handleChange} />
+              <Form.Control as="textarea"placeholder="Hi, I'm contacting you..." rows="4" name="message" onChange={handleChange} />
               </Form.Label>
             </Form.Group>
           
@@ -101,6 +105,7 @@ export default function Contact() {
           <p className="lead"> diegorubilartagle@gmail.com </p>
         </Col>
         </Row>
+        </Fade>
         </Container>
 
       </Layout>

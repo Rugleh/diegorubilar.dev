@@ -1,7 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import Badge from "react-bootstrap/Badge"
 import Card from "react-bootstrap/Card"
 import CardDeck from "react-bootstrap/CardDeck"
 import { StaticQuery, graphql } from "gatsby"
@@ -25,7 +23,7 @@ function Album() {
     <StaticQuery
       query={albumQuery}
       render={data => {
-        const { author, social } = data.site.siteMetadata
+        
         return (
           <div>
             <Fade bottom>

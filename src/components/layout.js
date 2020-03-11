@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Menu from "../components/menu"
 import Footer from "../components/footer"
 import Row from "react-bootstrap/Row"
@@ -12,10 +11,9 @@ import Particles from "react-particles-js"
 
 class Layout extends React.Component {
   render() {
-    const { location, navigate } = history
-    const { children, title } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-    const blogPath = `${__PATH_PREFIX__}/blog/`
+    const { location } = history
+    const { children } = this.props
+ 
     let header
     const pathArray = location.pathname.split("/")
     console.log(pathArray)

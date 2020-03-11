@@ -12,8 +12,6 @@ import Row from "react-bootstrap/Row"
 
 import Fade from "react-reveal/Fade"
 
-import Particles from "react-particles-js"
-
 import "./blog-post.css"
 
 class BlogPostTemplate extends React.Component {
@@ -33,6 +31,9 @@ class BlogPostTemplate extends React.Component {
             description={post.frontmatter.description || post.excerpt}
           />
           <Container>
+            <Fade bottom cascade>
+
+            
           <Row className="justify-content-md-center">
 
               <Col md="8">
@@ -70,6 +71,7 @@ class BlogPostTemplate extends React.Component {
             </ul>
             </Col>
             </Row>
+            </Fade>
           </Container>
         </Layout>
       </div>

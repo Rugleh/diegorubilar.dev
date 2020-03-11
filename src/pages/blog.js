@@ -3,13 +3,12 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Container from "react-bootstrap/Container"
+
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 
 import Fade from "react-reveal/Fade"
 
-import Particles from "react-particles-js"
 
 class Blog extends React.Component {
   render() {
