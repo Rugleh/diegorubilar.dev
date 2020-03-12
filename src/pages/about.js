@@ -34,12 +34,12 @@ class About extends React.Component {
           <hr></hr>
           <h3>
             Digital Marketing Manager <br></br>
-            <small>Geovictoria (2018 - 2019)</small>
+            <small>GeoVictoria (2018 - 2019)</small>
           </h3>
           <Row>
             <Col md={8}>
               <p className="lead">
-                I lead and implement a series of Google Ads campaigns, web
+                I lead and implemented a series of Google Ads campaigns, web
                 optimizations (SEO), landing page design and development for
                 GeoVictoria a multi national assist control software company.
               </p>
@@ -58,7 +58,7 @@ class About extends React.Component {
             </Col>
             <Col md={4}>
               HTML, CSS, Bootstrap, Javascript, Vuejs, Nuxtjs, Google Ads,
-              Google Analytics, Zoho, Mailchimp, Azure, Pipedrive, Wordpress,
+              Google Analytics, Zoho, Instapage, Mailchimp, Azure, Pipedrive, Wordpress,
               Bootstrap, Moz, SEO, Active Campaign, Adobe Photoshop, Adobe
               Illustrator
             </Col>

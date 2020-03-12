@@ -7,7 +7,7 @@ import { globalHistory as history } from '@reach/router'
 const Footer = () => {
     
     const { location } = history
-    console.log(location)
+ 
     return (
      <Container className="sticky-bottom">
          

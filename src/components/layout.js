@@ -16,7 +16,7 @@ class Layout extends React.Component {
  
     let header
     const pathArray = location.pathname.split("/")
-    console.log(pathArray)
+
 
     return (
       <div>

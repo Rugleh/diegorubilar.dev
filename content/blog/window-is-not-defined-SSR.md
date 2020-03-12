@@ -5,7 +5,7 @@ title: Window is not defined SSR
 description: How to avoid this error in server side rendering
 ---
 
-window it's a variable only availible for us when we are not server side rendering our content, as the case is with this web, is rendered in Netlify.
+Window it's a variable only availible for us when we are not server side rendering our content, as the case is with this web, is rendered in Netlify.
 when I was trying to change the color of my footer depending in wich page I was (for contrast porpuses), the build in Netlify failed
 The error was that I was using window in SSR
 

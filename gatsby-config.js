@@ -3,7 +3,7 @@ module.exports = {
     // edit below
     title: `Diego Rubilar`,
     author: `Diego Rubilar`,
-    description: `I'm a Web Developer`,
+    description: `Web Developer Engineer`,
     siteUrl: `https://diegorubilar.netlify.com/`,
     social: {
       twitter: `rugleh`,
@@ -64,7 +64,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // edit below
-        // trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-137846449-7`,
       },
     },
     {
@@ -77,7 +77,7 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         // edit below
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/dricon.png`,
       },
     },
     {

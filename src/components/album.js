@@ -197,14 +197,14 @@ const albumQuery = graphql`
     }
     derechos: file(absolutePath: { regex: "/portafolio/derechos.png/" }) {
       childImageSharp {
-        fixed(width: 1611, height: 1251) {
+        fixed(width: 1408, height: 1251) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     turismo: file(absolutePath: { regex: "/portafolio/turismo.png/" }) {
       childImageSharp {
-        fixed(width: 1611, height: 1251) {
+        fixed(width: 1609, height: 1251) {
           ...GatsbyImageSharpFixed
         }
       }
