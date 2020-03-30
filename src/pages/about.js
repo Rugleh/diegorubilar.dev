@@ -35,7 +35,7 @@ class About extends React.Component {
           <Row>
             <Col md={8}>
             <p className="lead">
-          I'm a 28 years old web developer and engineer based in Chile, I'm always looking for new opportunities and challenges.
+          I'm a 27 years old web developer and engineer based in Chile, I'm always looking for new opportunities and challenges.
 
           </p>
             </Col>
