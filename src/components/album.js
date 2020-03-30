@@ -6,6 +6,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Fade from "react-reveal/Fade"
 import { FaVuejs } from "react-icons/fa"
+import { FaReact } from "react-icons/fa"
 import { DiJavascript1 } from "react-icons/di"
 import { FaLaravel } from "react-icons/fa"
 import { FaWordpress } from "react-icons/fa"
@@ -163,6 +164,33 @@ function Album() {
                     <FaBootstrap></FaBootstrap>
                   </Card.Footer>
                 </Card>
+                <Card>
+                  <div>
+                    <Image
+                      fixed={data.lfi.childImageSharp.fixed}
+                      alt="lfi"
+                      style={{
+                        height: "200px",
+                        width: "100%",
+                        align: "middle",
+                      }}
+                    />
+                  </div>
+                  <Card.Body>
+                    <Card.Title>LFI test</Card.Title>
+                    <Card.Text className="lead">
+                      Web development for{" "}
+                      <a href="https://lfipruebav2.netlify.com/">
+                        LFI
+                      </a>
+                      , Web marketing agency with clients in all Chile.
+                    </Card.Text>
+                  </Card.Body>
+                  <Card.Footer>
+                    <FaReact></FaReact>{" "}
+                    <FaBootstrap></FaBootstrap>
+                  </Card.Footer>
+                </Card>
               </CardDeck>
             </Fade>
           </div>
@@ -205,6 +233,13 @@ const albumQuery = graphql`
     turismo: file(absolutePath: { regex: "/portafolio/turismo.png/" }) {
       childImageSharp {
         fixed(width: 1609, height: 1251) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    lfi: file(absolutePath: { regex: "/portafolio/lfi.png/" }) {
+      childImageSharp {
+        fixed(width: 1333, height: 1129) {
           ...GatsbyImageSharpFixed
         }
       }
