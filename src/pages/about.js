@@ -26,6 +26,26 @@ class About extends React.Component {
 
         <Container>
               <Fade bottom >
+              <h2>
+            <b>
+              Who am I?<span className="orange">.</span>
+            </b>
+          <hr></hr>
+          </h2>
+          <Row>
+            <Col md={8}>
+            <p className="lead">
+          I'm a 28 years old web developer and engineer based in Chile, I'm always looking for new opportunities and challenges.
+
+          </p>
+            </Col>
+            <Col md={4}>
+              Digital Marketing, Web development, Engineer
+            </Col>
+          </Row>
+
+          <br></br>
+         
           <h2>
             <b>
               Experience<span className="orange">.</span>
@@ -39,21 +59,13 @@ class About extends React.Component {
           <Row>
             <Col md={8}>
               <p className="lead">
-                I lead and implemented a series of Google Ads campaigns, web
-                optimizations (SEO), landing page design and development for
-                GeoVictoria a multi national assist control software company.
+              I lead and implemented a series of Google Ads campaigns, web optimizations (SEO), landing page design and development for GeoVictoria a multi national assist control software company.
               </p>
               <p className="lead">
-                One of the big challenges here was to understand in action, how
-                the bussiness process works, and how can I improve it using the
-                tools that they already had. I was in charge of the technical
-                part of every kind of implementation in the marketing area and
-                we manage to get better results in a variaty of process.
+              One of the big challenges here was to understand in action, how the business process works, and how can I improve it using the tools that they already had. I was in charge of the technical part of every kind of implementation in the marketing area and we manage to get better results in a variety of process.
               </p>
               <p className="lead">
-                We successfuly implemented a new CRM for the sales area of the
-                company and develop a few costume modules for the needs of the
-                work flow.
+              We successfully implemented a new CRM for the sales area of the company and develop a few costume modules for the needs of the work flow.
               </p>
             </Col>
             <Col md={4}>
@@ -111,12 +123,7 @@ class About extends React.Component {
           <Row>
             <Col md={8}>
               <p className="lead">
-                Web development for Derechos en Linea, group of professional and
-                services that helps prosecutors manage their cases. The
-                development was a really extense one, not because of the main
-                web, but for the system that is running behind, it's a web app
-                build with Voyager and Laravel, It let's the workers manage
-                their cases and share documents between them.
+              Web development for Derechos en Linea, group of professional and services that helps prosecutors manage their cases. The development was a really extense one, not because of the main web, but for the system that is running behind, it's a web app build with Voyager and Laravel, It lets the workers manage their cases and share documents between them.
               </p>
             </Col>
             <Col md={4}>
@@ -133,12 +140,7 @@ class About extends React.Component {
           <Row>
             <Col md={8}>
               <p className="lead">
-                Web development for Turismo Mediterraneo, turism agency with
-                allies around the world. One of my first webs that I develop
-                using Php and Laravel, one of the big challenges was to make a
-                dashboard that let the workers upload tours and edit them. The
-                development of this web was really big for them and help them to
-                grow really fast.
+              Web development for Turismo Mediterraneo, tourism agency with allies around the world. One of my first webs that I develop using Php and Laravel, one of the big challenges was to make a dashboard that let the workers upload tours and edit them. The development of this web was really big for them and help the company to grow really fast.
               </p>
             </Col>
             <Col md={4}>
@@ -155,10 +157,7 @@ class About extends React.Component {
           <Row>
             <Col md={8}>
               <p className="lead">
-                Intern in Smarti a TI consultan. I worked in proyects using
-                beacons, little bluetooth gadgets that emits and recive signals
-                in order to locate each other with the help of a radar (rasperry
-                pi).
+              Intern in Smarti a TI consultant. I worked in projects using beacons, little Bluetooth gadgets that emits and receive signals in order to locate each other with the help of a radar (raspberry pi).
               </p>
             </Col>
             <Col md={4}>
