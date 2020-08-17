@@ -35,7 +35,7 @@ class About extends React.Component {
           <Row>
             <Col md={8}>
             <p className="lead">
-          I'm a 27 years old web developer and engineer based in Chile, I'm always looking for new opportunities and challenges.
+          I'm a 28 years old web developer and engineer based in Chile, I'm always looking for new opportunities and challenges.
 
           </p>
             </Col>
@@ -52,6 +52,24 @@ class About extends React.Component {
             </b>
           </h2>
           <hr></hr>
+          <h3>
+            Front-end Developer <br></br>
+            <small>La Fabrica Imaginaria (2020)</small>
+          </h3>
+          <Row>
+            <Col md={8}>
+              <p className="lead">
+                I'm currently working as a Liferay front-end engineer, helping in the construction and development of web portals and web apps for important clients using the Liferay platform.
+              </p>
+            </Col>
+            <Col md={4}>
+              HTML, CSS, Bootstrap, Javascript, Jquery, SASS, Liferay, Free marker, Github, Scrum, Jira, Docker.
+            </Col>
+          </Row>
+              
+
+          <br></br>
+
           <h3>
             Digital Marketing Manager <br></br>
             <small>GeoVictoria (2018 - 2019)</small>

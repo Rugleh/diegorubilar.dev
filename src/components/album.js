@@ -91,13 +91,16 @@ function Album() {
                     />
                   </div>
                   <Card.Body>
-                    <Card.Title>Dosha Imbalance</Card.Title>
+                    <Card.Title>Ayurveda Quizes</Card.Title>
                     <Card.Text className="lead">
                       Open source{" "}
-                      <a href="https://doshaimbalance.netlify.com">
-                        Ayurveda Quiz
+                      <a href="https://prakriti-dosha.netlify.app">
+                        Pakriti quiz
+                      </a> and
+                      <a href="https://vikruti-dosha.netlify.app">
+                        vikruti quiz
                       </a>
-                      , it was develop for the HealthyGamer Community for free.
+                      , it was developed for the HealthyGamer.gg Community.
                     </Card.Text>
                   </Card.Body>
                   <Card.Footer>
@@ -183,7 +186,7 @@ function Album() {
                       <a href="https://lfipruebav2.netlify.com/">
                         LFI
                       </a>
-                      , Web marketing agency with clients in all Chile.
+                      , Web development and marketing agency.
                     </Card.Text>
                   </Card.Body>
                   <Card.Footer>
