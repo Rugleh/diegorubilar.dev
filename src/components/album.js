@@ -94,12 +94,7 @@ function Album() {
                     <Card.Title>Ayurveda Quizes</Card.Title>
                     <Card.Text className="lead">
                       Open source{" "}
-                      <a href="https://prakriti-dosha.netlify.app">
-                        Pakriti quiz
-                      </a> and
-                      <a href="https://vikruti-dosha.netlify.app">
-                        vikruti quiz
-                      </a>
+                      <a href="https://prakriti-dosha.netlify.app"> Pakriti quiz</a>{" "}and{" "}<a href="https://vikruti-dosha.netlify.app">vikruti quiz</a>
                       , it was developed for the HealthyGamer.gg Community.
                     </Card.Text>
                   </Card.Body>
