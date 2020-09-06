@@ -105,7 +105,7 @@ class IndexPage extends React.Component {
                 <a href="https://instagram.com/rugleh">
                   <FaInstagram></FaInstagram>
                 </a>{" "}
-                <a href="https://linkedin.com/in/diego-rubilar-tagle-637b2242">
+                <a href="https://linkedin.com/in/rugleh">
                   <FaLinkedin></FaLinkedin>
                 </a>{" "}
                 <a href="https://github.com/rugleh">
